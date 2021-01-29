@@ -15,7 +15,7 @@
         android:layout_centerVertical="true"
         android:layout_marginStart="@dimen/dimen_normal_margin"
         app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
-        app:strokeColor="@android:color/white"
+        app:strokeColor="@color/colorBackground"
         app:strokeWidth="@dimen/dimen_stroke_imageprofile" />
 
     <LinearLayout

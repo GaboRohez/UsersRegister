@@ -42,11 +42,8 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        if (list.get(position).getImage() != null){
-            Log.d(TAG, "onBindViewHolder: "+AppConstants.BASE_IMAGE_URL+list.get(position).getImage());
 
-            Glide.with(context).load(AppConstants.BASE_IMAGE_URL+list.get(position).getImage()).placeholder(android.R.drawable.progress_indeterminate_horizontal).error(android.R.drawable.stat_notify_error).into(holder.binding.ivProfile);
-        }
+        Glide.with(context).load(AppConstants.BASE_IMAGE_URL+list.get(position).getImage()).placeholder(android.R.drawable.progress_horizontal).error(R.drawable.ic_person).into(holder.binding.ivProfile);
 
         holder.binding.tvNick.setText(String.format(context.getString(R.string.nickname), list.get(position).getNick()));
         holder.binding.tvEmail.setText(list.get(position).getEmail());

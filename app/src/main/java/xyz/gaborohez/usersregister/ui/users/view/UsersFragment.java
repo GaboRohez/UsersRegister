@@ -44,7 +44,13 @@ public class UsersFragment extends BaseFragment<UsersContract.Presenter, Fragmen
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        setUpEvents();
         presenter.getUsers();
+    }
+
+    private void setUpEvents() {
+
+        binding.fab.setOnClickListener(v -> {});
     }
 
     @Override
