@@ -49,7 +49,8 @@ public class UsersFragment extends BaseFragment<UsersContract.Presenter, Fragmen
 
     @Override
     public void emptyUserList() {
-
+        binding.recycler.setVisibility(View.GONE);
+        binding.tvEmptyInfo.setVisibility(View.VISIBLE);
     }
 
     @Override
