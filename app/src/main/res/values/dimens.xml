@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_height_item_person">100dp</dimen>
+    <dimen name="dimen_profile_item_person">80dp</dimen>
+    <dimen name="dimen_padding_image_profile">5dp</dimen>
+    <dimen name="dimen_normal_margin">16dp</dimen>
+    <dimen name="dimen_small_margin">8dp</dimen>
+    <dimen name="dimen_stroke_imageprofile">3dp</dimen>
+    <dimen name="dimen_view_divider">0.5dp</dimen>
+</resources>
